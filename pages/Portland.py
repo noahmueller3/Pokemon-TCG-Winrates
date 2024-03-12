@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-cross_reference = pd.read_csv('pages\Cross-Reference Sheet_Portland.csv')
-winners_losers = pd.read_csv('pages\Winners and Losers_Portland.csv')
+cross_reference = pd.read_csv('Cross-Reference Sheet_Portland.csv')
+winners_losers = pd.read_csv('Winners and Losers_Portland.csv')
 player_decks = cross_reference.drop("Unnamed: 0", axis=1)
 match_results = winners_losers.drop("Unnamed: 0", axis=1)
 #Assisted by ChatGPT 4.0
